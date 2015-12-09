@@ -13,6 +13,7 @@ public class DateServer extends UnicastRemoteObject implements DateService {
 	@Override
 	public Date date() throws RemoteException {
 
+		System.out.println("Another satisfied customer!");
 		return new Date(System.currentTimeMillis());
 	}
 }
